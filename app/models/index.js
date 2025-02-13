@@ -20,5 +20,7 @@ database.Sequelize = Sequelize;
 database.sequelize = sequelize;
 database.product = require("./product.js")(sequelize, Sequelize);
 database.user = require("./user.js")(sequelize, Sequelize);
+database.userVerification = require("./userverification.js")(sequelize, Sequelize);
+
 
 module.exports = database;
